@@ -384,6 +384,10 @@ a:link, a:visited {
   grid-area: container;
 }
 
+.content-spacing {
+  padding: 70px 0 50px;
+}
+
 /* =============
     Typography
 ============= */
@@ -433,6 +437,31 @@ textarea {
 /* =============
     Navigation
 ============= */
+.red-button {
+  background-color: #F25C54;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 13px 20px;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .red-button {
+    font-size: 1.25rem;
+    padding: 14px 35px;
+  }
+}
+@media (min-width: 768px) {
+  .red-button {
+    font-size: 1.5rem;
+    padding: 16px 40px;
+  }
+}
+.red-button:hover {
+  background-color: #AD403A;
+}
+
 /* =============
     Header
 ============= */
@@ -580,4 +609,74 @@ footer > div ul li a:visited {
 footer > div ul li a:visited {
     font-size: 1.875rem;
   }
+}
+
+/* =============
+    Index Content
+============= */
+/* --------------------------
+    Index Hikes
+ --------------------------*/
+#index-hikes {
+  text-align: center;
+}
+#index-hikes h1 {
+  color: #01161E;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.8125rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #index-hikes h1 {
+    font-size: 3.4375rem;
+  }
+}
+@media (min-width: 1025px) {
+  #index-hikes h1 {
+    font-size: 4.0625rem;
+  }
+}
+@media (min-width: 1440px) {
+  #index-hikes h1 {
+    font-size: 4.6875rem;
+  }
+}
+#index-hikes p {
+  color: #598392;
+  font-size: 1rem;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #index-hikes p {
+    font-size: 1.125rem;
+    line-height: 22px;
+    margin-bottom: 30px;
+    padding: 0 20vw;
+  }
+}
+@media (min-width: 1025px) {
+  #index-hikes p {
+    font-size: 1.25rem;
+    line-height: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  #index-hikes p {
+    font-size: 1.375rem;
+    line-height: 27px;
+    margin-bottom: 40px;
+  }
+}
+
+/* --------------------------
+    Index Hero
+ --------------------------*/
+#index-hero img {
+  object-fit: cover;
+  width: 100vw;
 }
