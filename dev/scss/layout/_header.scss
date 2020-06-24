@@ -1,32 +1,31 @@
 /* =============
     Header
 ============= */
-header{
+header {
     border-bottom: 1px $sea-foam solid;
-    div{
 
+    div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
-
-
-        #logo-container{
+        #logo-container {
             padding: 10px 0;
-            img{
+
+            img {
                 width: 30px;
 
-                @include md{
+                @include md {
                     width: initial;
                 }
             }
         }
 
-        #burger-container{
-            font-size: rem-calc(20);
+        #burger-container {
+            align-items: center;
             color: $red;
             display: flex;
+            font-size: rem-calc(20);
             justify-content: flex-end;
-            align-items: center;
         }
     }
 }

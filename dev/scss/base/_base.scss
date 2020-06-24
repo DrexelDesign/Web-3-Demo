@@ -14,6 +14,11 @@ ul{
     }
 }
 
+a:link, a:visited{
+    text-decoration: none;
+    transition: 0.25s;
+}
+
 
 .grid-container{
     display: grid;

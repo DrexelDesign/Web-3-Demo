@@ -1,3 +1,124 @@
 /* =============
     Footer
 ============= */
+footer {
+    background-image: url("../img/footer/footer.jpg");
+    background-position: center;
+    background-size: cover;
+
+    >div {
+        text-align: center;
+
+        h1 {
+            color: $white;
+            font-family: 'Raleway', sans-serif;
+            font-size: rem-calc(35);
+            font-weight: 600;
+            padding: 350px 0 10px;
+
+            @include md {
+                padding-top: 430px;
+            }
+
+            @include lg {
+                padding-top: 600px;
+            }
+
+            @include xl {
+                padding-top: 70vh;
+            }
+        }
+
+        form {
+            section {
+                display: flex;
+                justify-content: center;
+
+                div {
+                    input {
+                        background-color: rgba(255, 255, 255, 0.75);
+                        border: none;
+                        border-radius: 0;
+                        color: $dark-blue;
+                        padding: 10px 0 7px 10px;
+
+                        @include md {
+                            padding: 15px 0 10px 10px;
+                            width: 400px;
+                        }
+
+                        @include lg {
+                            padding: 20px 0 15px 10px;
+                            width: 500px;
+                        }
+                    }
+
+                    ::placeholder {
+                        /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: $dark-blue;
+                        opacity: 1;
+                    }
+
+                    :-ms-input-placeholder {
+                        /* Internet Explorer 10-11 */
+                        color: $dark-blue;
+                    }
+
+                    ::-ms-input-placeholder {
+                        /* Microsoft Edge */
+                        color: $dark-blue;
+                    }
+
+                    button {
+                        background-color: $red;
+                        border: none;
+                        color: $white;
+                        cursor: pointer;
+                        height: 100%;
+
+                        @include lg {
+                            padding: 0 15px;
+                        }
+
+                        @include xl {
+                            padding: 0 25px;
+                        }
+
+                        &:hover {
+                            background-color: $dark-red;
+                        }
+                    }
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0 50px;
+
+            li {
+                margin: 0 20px;
+
+                a:link,
+                a:visited {
+                    color: $white;
+                    font-size: rem-calc(20);
+
+                    &:hover,
+                    &:active {
+                        color: $red;
+                    }
+
+                    @include md {
+                        font-size: rem-calc(25);
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(30);
+                    }
+                }
+            }
+        }
+    }
+}

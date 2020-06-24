@@ -365,6 +365,11 @@ ul li {
   list-style: none;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  transition: 0.25s;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
@@ -383,7 +388,7 @@ ul li {
     Typography
 ============= */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -403,6 +408,10 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  transition: 0.25s;
+}
+
 /* =============
     Forms
 ============= */
@@ -446,16 +455,133 @@ header div #logo-container img {
   }
 }
 header div #burger-container {
-  font-size: 1.25rem;
+  align-items: center;
   color: #F25C54;
   display: flex;
+  font-size: 1.25rem;
   justify-content: flex-end;
-  align-items: center;
 }
 
 /* =============
     Footer
 ============= */
+footer {
+  background-image: url("../img/footer/footer.jpg");
+  background-position: center;
+  background-size: cover;
+}
+footer > div {
+  text-align: center;
+}
+footer > div h1 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.1875rem;
+  font-weight: 600;
+  padding: 350px 0 10px;
+}
+@media (min-width: 768px) {
+  footer > div h1 {
+    padding-top: 430px;
+  }
+}
+@media (min-width: 1025px) {
+  footer > div h1 {
+    padding-top: 600px;
+  }
+}
+@media (min-width: 1440px) {
+  footer > div h1 {
+    padding-top: 70vh;
+  }
+}
+footer > div form section {
+  display: flex;
+  justify-content: center;
+}
+footer > div form section div input {
+  background-color: rgba(255, 255, 255, 0.75);
+  border: none;
+  border-radius: 0;
+  color: #01161E;
+  padding: 10px 0 7px 10px;
+}
+@media (min-width: 768px) {
+  footer > div form section div input {
+    padding: 15px 0 10px 10px;
+    width: 400px;
+  }
+}
+@media (min-width: 1025px) {
+  footer > div form section div input {
+    padding: 20px 0 15px 10px;
+    width: 500px;
+  }
+}
+footer > div form section div ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #01161E;
+  opacity: 1;
+}
+footer > div form section div :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #01161E;
+}
+footer > div form section div ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #01161E;
+}
+footer > div form section div button {
+  background-color: #F25C54;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 100%;
+}
+@media (min-width: 1025px) {
+  footer > div form section div button {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 1440px) {
+  footer > div form section div button {
+    padding: 0 25px;
+  }
+}
+footer > div form section div button:hover {
+  background-color: #AD403A;
+}
+footer > div ul {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 50px;
+}
+footer > div ul li {
+  margin: 0 20px;
+}
+footer > div ul li a:link,
+footer > div ul li a:visited {
+  color: #fff;
+  font-size: 1.25rem;
+}
+footer > div ul li a:link:hover, footer > div ul li a:link:active,
+footer > div ul li a:visited:hover,
+footer > div ul li a:visited:active {
+  color: #F25C54;
+}
+@media (min-width: 768px) {
+  footer > div ul li a:link,
+footer > div ul li a:visited {
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 1025px) {
+  footer > div ul li a:link,
+footer > div ul li a:visited {
+    font-size: 1.875rem;
+  }
+}
+
 /* =============
     Section 1
 ============= */

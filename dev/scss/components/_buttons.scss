@@ -1,3 +1,10 @@
 /* =============
     Buttons
 ============= */
+button{
+   transition: 0.25s;
+}
+
+*:focus {
+    // outline: none;
+}
