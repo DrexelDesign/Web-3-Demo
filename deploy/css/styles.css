@@ -365,6 +365,20 @@ ul li {
   list-style: none;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". container .";
+}
+@media (min-width: 1440px) {
+  .grid-container {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+.grid-container > div {
+  grid-area: container;
+}
+
 /* =============
     Typography
 ============= */
@@ -413,6 +427,32 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  border-bottom: 1px #EFF6E0 solid;
+}
+header div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+header div #logo-container {
+  padding: 10px 0;
+}
+header div #logo-container img {
+  width: 30px;
+}
+@media (min-width: 768px) {
+  header div #logo-container img {
+    width: initial;
+  }
+}
+header div #burger-container {
+  font-size: 1.25rem;
+  color: #F25C54;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 /* =============
     Footer
 ============= */

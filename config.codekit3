@@ -19,6 +19,238 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/footer/footer.jpg": {
+		"ft": 16384,
+		"iS": 380691,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/footer/footer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery-1.jpg": {
+		"ft": 16384,
+		"iS": 543787,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery-2.jpg": {
+		"ft": 16384,
+		"iS": 425351,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery-3.jpg": {
+		"ft": 16384,
+		"iS": 707085,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery-4.jpg": {
+		"ft": 16384,
+		"iS": 216703,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery-6.jpg": {
+		"ft": 16384,
+		"iS": 192276,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery-7.jpg": {
+		"ft": 16384,
+		"iS": 166610,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery-7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/header/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/header/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/brands/coleman.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/home/brands/coleman.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/brands/columbia.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/home/brands/columbia.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/brands/patagonia.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/home/brands/patagonia.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/brands/tnf.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/home/brands/tnf.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/brands/yeti.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/home/brands/yeti.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/hero.jpg": {
+		"ft": 16384,
+		"iS": 714958,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/home/planning/planning.jpg": {
+		"ft": 16384,
+		"iS": 145132,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/planning/planning.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/home/weather/snow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/home/weather/snow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/weather/sun.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/home/weather/sun.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/weather/thunder.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/home/weather/thunder.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/weather/wind.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/home/weather/wind.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/planning/slide-1.jpg": {
+		"ft": 16384,
+		"iS": 176033,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/planning/slide-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/planning/slide-2.jpg": {
+		"ft": 16384,
+		"iS": 316777,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/planning/slide-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/planning/slide-3.jpg": {
+		"ft": 16384,
+		"iS": 125623,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/planning/slide-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
