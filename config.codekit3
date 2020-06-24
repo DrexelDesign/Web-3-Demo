@@ -270,6 +270,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/content/index-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/content/index-content.html",
+		"oF": 0
+		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -451,19 +459,6 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_section-1.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-1.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -477,12 +472,12 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/section-1.kit": {
+	"/dev/template.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/section-1.html",
+		"oAP": "/dev/template.html",
 		"oF": 0
 		}
 	},
