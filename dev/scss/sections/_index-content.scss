@@ -65,3 +65,66 @@
         width: 100vw;
     }
 }
+
+/* --------------------------
+    Index Brands
+ --------------------------*/
+#index-brands {
+    padding: 20px 0;
+
+    @include md {
+        padding: 30px 0;
+    }
+
+    @include lg {
+        padding: 40px 0;
+    }
+
+    >div {
+        ul {
+            display: grid;
+            gap: 20px;
+            grid-template-areas: "l1 l1 l2 l2"
+                "l3 l3 l4 l4"
+                ". l5 l5 .";
+            grid-template-columns: repeat(4, 1fr);
+
+            @include md {
+                grid-template-areas: "l1 l1 l2 l2 l3 l3"
+                    ". l4 l4 l5 l5 .";
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            @include lg {
+                grid-template-areas: "l1 l2 l3 l4 l5";
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            li {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            li:nth-child(1) {
+                grid-area: l1;
+            }
+
+            li:nth-child(2) {
+                grid-area: l2;
+            }
+
+            li:nth-child(3) {
+                grid-area: l3;
+            }
+
+            li:nth-child(4) {
+                grid-area: l4;
+            }
+
+            li:nth-child(5) {
+                grid-area: l5;
+            }
+        }
+    }
+}

@@ -680,3 +680,58 @@ footer > div ul li a:visited {
   object-fit: cover;
   width: 100vw;
 }
+
+/* --------------------------
+    Index Brands
+ --------------------------*/
+#index-brands {
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  #index-brands {
+    padding: 30px 0;
+  }
+}
+@media (min-width: 1025px) {
+  #index-brands {
+    padding: 40px 0;
+  }
+}
+#index-brands > div ul {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "l1 l1 l2 l2" "l3 l3 l4 l4" ". l5 l5 .";
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (min-width: 768px) {
+  #index-brands > div ul {
+    grid-template-areas: "l1 l1 l2 l2 l3 l3" ". l4 l4 l5 l5 .";
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  #index-brands > div ul {
+    grid-template-areas: "l1 l2 l3 l4 l5";
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+#index-brands > div ul li {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#index-brands > div ul li:nth-child(1) {
+  grid-area: l1;
+}
+#index-brands > div ul li:nth-child(2) {
+  grid-area: l2;
+}
+#index-brands > div ul li:nth-child(3) {
+  grid-area: l3;
+}
+#index-brands > div ul li:nth-child(4) {
+  grid-area: l4;
+}
+#index-brands > div ul li:nth-child(5) {
+  grid-area: l5;
+}
