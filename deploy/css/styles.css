@@ -403,10 +403,33 @@ h1, h2, h3, h4 {
 p {
   margin: 0;
   padding: 0;
+  line-height: 29px;
 }
 
 .section-title {
   font-weight: 300;
+}
+
+.sub-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.5625rem;
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .sub-title {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1025px) {
+  .sub-title {
+    font-size: 2.0625rem;
+  }
+}
+@media (min-width: 1440px) {
+  .sub-title {
+    font-size: 2.3125rem;
+  }
 }
 
 /* =============
@@ -734,4 +757,111 @@ footer > div ul li a:visited {
 }
 #index-brands > div ul li:nth-child(5) {
   grid-area: l5;
+}
+
+/* --------------------------
+    Index Planning
+ --------------------------*/
+#index-planning {
+  background-color: #124559;
+  color: #AEC3B0;
+}
+#index-planning > div {
+  border: 1px solid red;
+  position: relative;
+}
+#index-planning > div #card {
+  background-color: #AEC3B0;
+  border-radius: 10px;
+  bottom: -150px;
+  color: #124559;
+  display: none;
+  padding: 24px;
+  position: absolute;
+  right: 10%;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  #index-planning > div #card {
+    display: block;
+  }
+}
+#index-planning > div #card div {
+  align-items: center;
+  background-color: #124559;
+  border-radius: 100px;
+  color: #EFF6E0;
+  display: flex;
+  font-size: 1.5625rem;
+  height: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50px;
+}
+#index-planning > div #card h2 {
+  font-size: 1.5625rem;
+  font-weight: 400;
+}
+#index-planning > div #card h2:first-of-type {
+  padding-top: 20px;
+}
+#index-planning > div #card h2:last-of-type {
+  padding-bottom: 30px;
+}
+#index-planning > div article {
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #index-planning > div article p {
+    padding-right: 40vw;
+  }
+}
+@media (min-width: 1025px) {
+  #index-planning > div article p {
+    padding-right: 60vw;
+  }
+}
+@media (min-width: 1440px) {
+  #index-planning > div article p {
+    padding-right: 1000px;
+  }
+}
+#index-planning > div #planning-hero {
+  display: grid;
+  grid-template-areas: ". planning-hero .";
+  grid-template-columns: auto 90% auto;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  #index-planning > div #planning-hero {
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 1025px) {
+  #index-planning > div #planning-hero {
+    grid-template-columns: auto 60% auto;
+  }
+}
+#index-planning > div #planning-hero > div {
+  background-image: url("../img/home/planning/planning.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 17px;
+  grid-area: planning-hero;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #index-planning > div #planning-hero > div {
+    height: 450px;
+  }
+}
+@media (min-width: 1025px) {
+  #index-planning > div #planning-hero > div {
+    height: 500px;
+  }
+}
+@media (min-width: 1440px) {
+  #index-planning > div #planning-hero > div {
+    height: 600px;
+  }
 }

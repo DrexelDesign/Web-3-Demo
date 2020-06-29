@@ -17,8 +17,27 @@ h1,h2,h3,h4{
 p{
     margin: 0;
     padding: 0;
+    line-height: 29px;
 }
 
 .section-title{
     font-weight: 300;
+}
+
+.sub-title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: rem-calc(25);
+    margin-bottom: 5px;
+    @include md{
+        font-size: rem-calc(30);
+    }
+
+    @include lg{
+        font-size: rem-calc(33);
+    }
+
+    @include xl{
+        font-size: rem-calc(37);
+    }
 }

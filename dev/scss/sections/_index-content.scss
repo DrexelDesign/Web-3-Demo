@@ -128,3 +128,117 @@
         }
     }
 }
+
+
+/* --------------------------
+    Index Planning
+ --------------------------*/
+ #index-planning {
+    background-color: $blue;
+    color: $green;
+
+    >div{
+        border: 1px solid red;
+        position: relative;
+
+
+        #card {
+            background-color: $green;
+            border-radius: 10px;
+            bottom: -150px;
+            color: $blue;
+            display: none;
+            padding: 24px;
+            position: absolute;
+            right: 10%;
+            text-align: center;
+
+            @include lg {
+                display: block;
+            }
+
+            div {
+                align-items: center;
+                background-color: $blue;
+                border-radius: 100px;
+                color: $sea-foam;
+                display: flex;
+                font-size: rem-calc(25);
+                height: 50px;
+                justify-content: center;
+                margin: 0 auto;
+                width: 50px;
+            }
+
+            h2 {
+                font-size: rem-calc(25);
+                font-weight: 400;
+            }
+
+            h2:first-of-type {
+                padding-top: 20px;
+            }
+
+            h2:last-of-type {
+                padding-bottom: 30px;
+            }
+        }
+
+
+        article{
+
+            text-align: justify;
+
+            p{
+                @include md {
+                    padding-right: 40vw;
+                }
+    
+                @include lg {
+                    padding-right: 60vw;
+                }
+    
+                @include xl {
+                    padding-right: 1000px;
+                }
+            }
+
+        }
+
+        #planning-hero {
+            display: grid;
+            grid-template-areas: ". planning-hero .";
+            grid-template-columns: auto 90% auto;
+            margin-top: 30px;
+
+            @include md {
+                grid-template-columns: auto 80% auto;
+            }
+
+            @include lg {
+                grid-template-columns: auto 60% auto;
+            }
+
+            >div {
+                background-image: url("../img/home/planning/planning.jpg");
+                background-position: center;
+                background-size: cover;
+                border-radius: 17px;
+                grid-area: planning-hero;
+                height: 300px;
+
+                @include md {
+                    height: 450px;
+                }
+
+                @include lg {
+                    height: 500px;
+                }
+
+                @include xl {
+                    height: 600px;
+                }
+            }
+        }
+    }
+ }  
