@@ -138,7 +138,7 @@
     color: $green;
 
     >div{
-        border: 1px solid red;
+        // border: 1px solid red;
         position: relative;
 
 
@@ -242,3 +242,74 @@
         }
     }
  }  
+
+
+ /* --------------------------
+    Index Weather
+ --------------------------*/
+ #index-weather{
+
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
+
+     >div{
+         display: grid;
+         gap: 20px;
+
+         @include md{
+             grid-template-columns: 60% auto;
+         }
+
+         section{
+             article{
+                 margin-bottom: 20px;
+
+                 h2{
+                    color: $aqua;
+                    font-size: rem-calc(20);
+
+                    @include md {
+                        font-size: rem-calc(22);
+                    }
+                 }
+
+                 p{
+
+                 }
+             }
+         }
+
+         aside{
+
+            @include xl{
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+
+
+             ul{
+                 display: grid;
+                 grid-template-columns: repeat(2, 1fr);
+                 gap:20px;
+
+                 @include md{
+                    grid-template-columns: repeat(1, 1fr);
+                 }
+                 @include lg{
+                    grid-template-columns: repeat(2, 1fr);
+                 }
+                 @include xl{
+                    grid-template-columns: repeat(4, 1fr);
+                    height: 100%;
+                 }
+                 li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                 }
+             }
+         }
+     }
+ }

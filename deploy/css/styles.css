@@ -767,7 +767,6 @@ footer > div ul li a:visited {
   color: #AEC3B0;
 }
 #index-planning > div {
-  border: 1px solid red;
   position: relative;
 }
 #index-planning > div #card {
@@ -864,4 +863,67 @@ footer > div ul li a:visited {
   #index-planning > div #planning-hero > div {
     height: 600px;
   }
+}
+
+/* --------------------------
+   Index Weather
+--------------------------*/
+@media (min-width: 1440px) {
+  #index-weather {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+#index-weather > div {
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  #index-weather > div {
+    grid-template-columns: 60% auto;
+  }
+}
+#index-weather > div section article {
+  margin-bottom: 20px;
+}
+#index-weather > div section article h2 {
+  color: #598392;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  #index-weather > div section article h2 {
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 1440px) {
+  #index-weather > div aside {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+#index-weather > div aside ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  #index-weather > div aside ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  #index-weather > div aside ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1440px) {
+  #index-weather > div aside ul {
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+  }
+}
+#index-weather > div aside ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
