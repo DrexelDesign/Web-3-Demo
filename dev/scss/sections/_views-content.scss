@@ -1,0 +1,89 @@
+/* =============
+    Views Content
+============= */
+
+#views-gallery {
+    ul {
+        display: grid;
+        gap: 20px;
+        grid-template-rows: repeat(4, 290px);
+
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 290px 366px 224px;
+            grid-template-areas:
+                "one two"
+                "five five"
+                "seven seven";
+        }
+
+        @include lg {
+            grid-template-areas: 
+            "one two three"
+            "five five six"
+            "seven seven seven";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 285px 597px 333px;
+        }
+
+        @include xl {
+            grid-template-areas: "one two three four"
+                "five five five six"
+                "seven seven seven seven";
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 272px 581px 290px;
+        }
+
+        li {
+            img {
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        li:nth-child(1) {
+            @include md {
+                grid-area: one;
+            }
+
+        }
+
+        li:nth-child(2) {
+            @include md {
+                grid-area: two;
+            }
+        }
+
+        li:nth-child(3) {
+            @include lg {
+                grid-area: three;
+            }
+        }
+
+        li:nth-child(4) {
+            @include xl {
+                grid-area: four;
+            }
+        }
+
+        li:nth-child(5) {
+            @include md {
+                grid-area: five;
+            }
+        }
+
+        li:nth-child(6) {
+            @include lg {
+                grid-area: six;
+            }
+        }
+
+        li:nth-child(7) {
+            @include md {
+                grid-area: seven;
+            }
+        }
+    }
+}

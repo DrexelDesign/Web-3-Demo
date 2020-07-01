@@ -30,72 +30,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/gallery/gallery-1.jpg": {
-		"ft": 16384,
-		"iS": 543787,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/gallery/gallery-1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/gallery/gallery-2.jpg": {
-		"ft": 16384,
-		"iS": 425351,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/gallery/gallery-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/gallery/gallery-3.jpg": {
-		"ft": 16384,
-		"iS": 707085,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/gallery/gallery-3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/gallery/gallery-4.jpg": {
-		"ft": 16384,
-		"iS": 216703,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/gallery/gallery-4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/gallery/gallery-6.jpg": {
-		"ft": 16384,
-		"iS": 192276,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/gallery/gallery-6.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/gallery/gallery-7.jpg": {
-		"ft": 16384,
-		"iS": 166610,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/gallery/gallery-7.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/deploy/img/header/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -251,6 +185,83 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/views/gallery-1.jpg": {
+		"ft": 16384,
+		"iS": 438661,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/views/gallery-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/views/gallery-2.jpg": {
+		"ft": 16384,
+		"iS": 425351,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/views/gallery-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/views/gallery-3.jpg": {
+		"ft": 16384,
+		"iS": 707085,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/views/gallery-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/views/gallery-4.jpg": {
+		"ft": 16384,
+		"iS": 216703,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/views/gallery-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/views/gallery-5.jpg": {
+		"ft": 16384,
+		"iS": 543787,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/views/gallery-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/views/gallery-6.jpg": {
+		"ft": 16384,
+		"iS": 192276,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/views/gallery-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/views/gallery-7.jpg": {
+		"ft": 16384,
+		"iS": 166610,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/views/gallery-7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -270,12 +281,28 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/deploy/views.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/views.html",
+		"oF": 0
+		},
 	"/dev/content/index-content.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/index-content.html",
+		"oF": 0
+		},
+	"/dev/content/views-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/views-content.html",
 		"oF": 0
 		},
 	"/dev/global/footer.kit": {
@@ -317,6 +344,17 @@
 		"oA": 0,
 		"oAP": "/deploy/index.html",
 		"oF": 2
+		},
+	"/dev/js/fancyBox.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/fancyBox-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
@@ -472,6 +510,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/sections/_views-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_views-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -492,6 +543,14 @@
 		"oA": 0,
 		"oAP": "/dev/template.html",
 		"oF": 0
+		},
+	"/dev/views.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/views.html",
+		"oF": 2
 		}
 	},
 "hooks": [
@@ -941,7 +1000,7 @@
 	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 1,
+	"esLintEnvironmentsMask": 8193,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -1272,7 +1331,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {

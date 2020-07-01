@@ -370,6 +370,33 @@ a:link, a:visited {
   transition: 0.25s;
 }
 
+.show-for-md {
+  display: none;
+}
+@media (min-width: 768px) {
+  .show-for-md {
+    display: block;
+  }
+}
+
+.show-for-lg {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .show-for-lg {
+    display: block;
+  }
+}
+
+.show-for-xl {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .show-for-xl {
+    display: block;
+  }
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
@@ -386,6 +413,62 @@ a:link, a:visited {
 
 .content-spacing {
   padding: 70px 0 50px;
+}
+
+.page-intro {
+  text-align: center;
+}
+.page-intro h1 {
+  color: #124559;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.8125rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .page-intro h1 {
+    font-size: 3.4375rem;
+  }
+}
+@media (min-width: 1025px) {
+  .page-intro h1 {
+    font-size: 4.0625rem;
+  }
+}
+@media (min-width: 1440px) {
+  .page-intro h1 {
+    font-size: 4.6875rem;
+  }
+}
+.page-intro p {
+  color: #598392;
+  font-size: 1rem;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .page-intro p {
+    font-size: 1.125rem;
+    line-height: 22px;
+    margin-bottom: 30px;
+    padding: 0 20vw;
+  }
+}
+@media (min-width: 1025px) {
+  .page-intro p {
+    font-size: 1.25rem;
+    line-height: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  .page-intro p {
+    font-size: 1.375rem;
+    line-height: 27px;
+    margin-bottom: 40px;
+  }
 }
 
 /* =============
@@ -640,62 +723,6 @@ footer > div ul li a:visited {
 /* --------------------------
     Index Hikes
  --------------------------*/
-#index-hikes {
-  text-align: center;
-}
-#index-hikes h1 {
-  color: #01161E;
-  font-family: "Raleway", sans-serif;
-  font-size: 2.8125rem;
-  font-weight: 900;
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  #index-hikes h1 {
-    font-size: 3.4375rem;
-  }
-}
-@media (min-width: 1025px) {
-  #index-hikes h1 {
-    font-size: 4.0625rem;
-  }
-}
-@media (min-width: 1440px) {
-  #index-hikes h1 {
-    font-size: 4.6875rem;
-  }
-}
-#index-hikes p {
-  color: #598392;
-  font-size: 1rem;
-  line-height: 20px;
-  margin-bottom: 20px;
-  text-align: justify;
-}
-@media (min-width: 768px) {
-  #index-hikes p {
-    font-size: 1.125rem;
-    line-height: 22px;
-    margin-bottom: 30px;
-    padding: 0 20vw;
-  }
-}
-@media (min-width: 1025px) {
-  #index-hikes p {
-    font-size: 1.25rem;
-    line-height: 24px;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-}
-@media (min-width: 1440px) {
-  #index-hikes p {
-    font-size: 1.375rem;
-    line-height: 27px;
-    margin-bottom: 40px;
-  }
-}
-
 /* --------------------------
     Index Hero
  --------------------------*/
@@ -926,4 +953,75 @@ footer > div ul li a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* =============
+    Views Content
+============= */
+#views-gallery ul {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: repeat(4, 290px);
+}
+@media (min-width: 768px) {
+  #views-gallery ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 290px 366px 224px;
+    grid-template-areas: "one two" "five five" "seven seven";
+  }
+}
+@media (min-width: 1025px) {
+  #views-gallery ul {
+    grid-template-areas: "one two three" "five five six" "seven seven seven";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 285px 597px 333px;
+  }
+}
+@media (min-width: 1440px) {
+  #views-gallery ul {
+    grid-template-areas: "one two three four" "five five five six" "seven seven seven seven";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 272px 581px 290px;
+  }
+}
+#views-gallery ul li img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #views-gallery ul li:nth-child(1) {
+    grid-area: one;
+  }
+}
+@media (min-width: 768px) {
+  #views-gallery ul li:nth-child(2) {
+    grid-area: two;
+  }
+}
+@media (min-width: 1025px) {
+  #views-gallery ul li:nth-child(3) {
+    grid-area: three;
+  }
+}
+@media (min-width: 1440px) {
+  #views-gallery ul li:nth-child(4) {
+    grid-area: four;
+  }
+}
+@media (min-width: 768px) {
+  #views-gallery ul li:nth-child(5) {
+    grid-area: five;
+  }
+}
+@media (min-width: 1025px) {
+  #views-gallery ul li:nth-child(6) {
+    grid-area: six;
+  }
+}
+@media (min-width: 768px) {
+  #views-gallery ul li:nth-child(7) {
+    grid-area: seven;
+  }
 }

@@ -1,0 +1,1 @@
+console.log("Hello from FancyBox file"),$(document).ready((function(){console.log("change")}));

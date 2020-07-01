@@ -5,55 +5,7 @@
     Index Hikes
  --------------------------*/
 #index-hikes {
-    text-align: center;
-
-    h1 {
-        color: $dark-blue;
-        font-family: 'Raleway', sans-serif;
-        font-size: rem-calc(45);
-        font-weight: 900;
-        margin-bottom: 20px;
-
-        @include md {
-            font-size: rem-calc(55);
-        }
-
-        @include lg {
-            font-size: rem-calc(65);
-        }
-
-        @include xl {
-            font-size: rem-calc(75);
-        }
-    }
-
-    p {
-        color: $aqua;
-        font-size: rem-calc(16);
-        line-height: 20px;
-        margin-bottom: 20px;
-        text-align: justify;
-
-        @include md {
-            font-size: rem-calc(18);
-            line-height: 22px;
-            margin-bottom: 30px;
-            padding: 0 20vw;
-        }
-
-        @include lg {
-            font-size: rem-calc(20);
-            line-height: 24px;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        @include xl {
-            font-size: rem-calc(22);
-            line-height: 27px;
-            margin-bottom: 40px;
-        }
-    }
+    
 }
 
 /* --------------------------
