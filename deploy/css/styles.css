@@ -568,6 +568,15 @@ textarea {
   background-color: #AD403A;
 }
 
+.fancybox-button, .fancybox-button:link, .fancybox-button:visited {
+  color: #F25C54;
+}
+
+.fancybox-caption, .fancybox-infobar, .fancybox-navigation .fancybox-button, .fancybox-toolbar {
+  opacity: 1;
+  visibility: initial;
+}
+
 /* =============
     Header
 ============= */

@@ -1,1 +1,1 @@
-console.log("Hello from FancyBox file"),$(document).ready((function(){console.log("change")}));
+$('[data-fancybox="gallery"]').fancybox({}),$(document).ready((function(){console.log("change")}));

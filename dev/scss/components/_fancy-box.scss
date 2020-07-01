@@ -1,0 +1,9 @@
+.fancybox-button, .fancybox-button:link, .fancybox-button:visited {
+    color: $red;
+}
+
+.fancybox-caption, .fancybox-infobar, .fancybox-navigation .fancybox-button, .fancybox-toolbar {
+    opacity: 1;
+    // visibility: hidden;
+    visibility: initial;
+}
