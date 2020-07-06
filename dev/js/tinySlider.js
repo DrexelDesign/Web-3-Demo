@@ -7,7 +7,7 @@ tns({
     edgePadding: 50,
     //controls: false,
     controlsPosition: "bottom",
-    navPosition: "bottom",
+    navPosition: "bottom"
     //loop: false,
     //startIndex: 2,
 
