@@ -281,6 +281,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/deploy/planning.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/planning.html",
+		"oF": 0
+		},
 	"/deploy/views.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -295,6 +303,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/index-content.html",
+		"oF": 0
+		},
+	"/dev/content/planning-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/planning-content.html",
 		"oF": 0
 		},
 	"/dev/content/views-content.kit": {
@@ -366,6 +382,25 @@
 		"oF": 2,
 		"sC": 3,
 		"tS": 0
+		},
+	"/dev/js/tinySlider.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/tinySlider-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/planning.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/planning.html",
+		"oF": 2
 		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
@@ -519,6 +554,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_index-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_planning-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_planning-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -2092,7 +2140,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "tns",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

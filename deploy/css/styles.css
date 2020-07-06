@@ -1034,3 +1034,16 @@ footer > div ul li a:visited {
     grid-area: seven;
   }
 }
+
+/* =============
+    Planning Content
+============= */
+#planning-intro > div #planning-slides .my-slider div {
+  height: 800px;
+}
+#planning-intro > div #planning-slides .my-slider div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

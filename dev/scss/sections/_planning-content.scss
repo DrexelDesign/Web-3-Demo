@@ -1,0 +1,21 @@
+/* =============
+    Planning Content
+============= */
+
+#planning-intro{
+    >div{
+        #planning-slides{
+            .my-slider{
+                div{
+                    height: 800px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
+}
