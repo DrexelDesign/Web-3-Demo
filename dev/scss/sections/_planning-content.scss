@@ -3,19 +3,30 @@
 ============= */
 
 #planning-intro{
+
+}
+
+#planning-slides{
+    // border: 1px solid red;
     >div{
-        #planning-slides{
-            .my-slider{
-                div{
-                    height: 800px;
-                    img{
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                        object-position: center;
-                    }
+        
+        .my-slider{
+            
+            div{
+                height: 800px;
+                
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
                 }
             }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $white;
+            background: $red;
         }
     }
 }

@@ -2,7 +2,28 @@
 
 tns({
     container: '.my-slider',
-    items: 3,
-    slideBy: 'page',
-    autoplay: true
+    //items: 1,
+    gutter: 20,
+    edgePadding: 50,
+    //controls: false,
+    controlsPosition: "bottom",
+    navPosition: "bottom",
+    //loop: false,
+    //startIndex: 2,
+
+    // responsive: {
+    //       "350": {
+    //         "items": 1
+    //       },
+    //       "768": {
+    //         "items": 2
+    //       },
+    //       "1440": {
+    //         "items": 3
+    //       }
+    // }
+    //axis: "vertical"
+    //"edgePadding": 50
+    //slideBy: 'page',
+    //autoplay: true
 });
