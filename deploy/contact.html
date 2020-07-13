@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@600;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/db8be9eca2.js" crossorigin="anonymous"></script>
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <!-- Tiny Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Web 3 Demo</title>
+</head>
+
+<body>
+
+    <header class="grid-container">
+        <div>
+            <section id="logo-container">
+                <img src="img/header/logo.svg" alt="mountain logo">
+            </section>
+    
+            <section id="burger-container">
+                <i class="fas fa-bars"></i>
+            </section>
+        </div>
+    </header>
+    <section class="grid-container content-spacing page-intro" id="contact-intro">
+            <div>
+                <h1>Contact</h1>
+            </div>
+        </section>
+        
+        <section class="grid-container content-spacing" id="contact-map">
+            <div>
+                <div id="map"></div>
+            </div>
+        </section>
+        
+    <footer class="grid-container">
+                <div>
+                    <h1>Sign Up!</h1>
+                    <form action="#">
+                        <section>
+                            <div>
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div>
+                                <button><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </section>
+                    </form>
+                    <ul>
+                        <li><a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/home?trk=logo"><i class="fab fa-linkedin-in"></i></i></a></li>
+                        <li><a href="https://github.com/ target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = {
+                lat: -25.344,
+                lng: 131.036
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaNJmS9ygTVhn6wbPPCEG-Z82_ManhnyU&callback=initMap">
+    </script>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <!-- fancyBox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Tiny Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    
+    <script src="js/scripts-min.js"></script>
+</body>
+
+</html>
