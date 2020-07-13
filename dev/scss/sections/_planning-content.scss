@@ -10,7 +10,7 @@
     // border: 1px solid red;
     >div{
         
-        .my-slider{
+        .slides{
             
             div{
                 height: 800px;
@@ -23,6 +23,20 @@
                 }
             }
         }
+
+        // .my-slider-2{
+            
+        //     div{
+        //         height: 800px;
+                
+        //         img{
+        //             height: 100%;
+        //             width: 100%;
+        //             object-fit: cover;
+        //             object-position: center;
+        //         }
+        //     }
+        // }
 
         .tns-controls [aria-controls] {
             color: $white;

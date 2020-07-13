@@ -1356,10 +1356,10 @@ footer > div ul li a:visited {
 /* =============
     Planning Content
 ============= */
-#planning-slides > div .my-slider div {
+#planning-slides > div .slides div {
   height: 800px;
 }
-#planning-slides > div .my-slider div img {
+#planning-slides > div .slides div img {
   height: 100%;
   width: 100%;
   object-fit: cover;
