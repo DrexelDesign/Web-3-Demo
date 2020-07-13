@@ -895,6 +895,18 @@ pre[class*=language-] {
   cursor: help;
 }
 
+.referral {
+  display: none !important;
+}
+
+.juicer-ad {
+  display: none !important;
+}
+
+#following-content {
+  background-color: #EFF6E0;
+}
+
 /* =============
     Header
 ============= */
