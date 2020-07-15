@@ -1,5 +1,5 @@
 // console.log("tiny slider is working!");
-
+if ($(this).hasClass("my-slider")) {
 tns({
     container: '.my-slider',
     //items: 1,
@@ -56,3 +56,5 @@ tns({
     //slideBy: 'page',
     //autoplay: true
 });
+
+}
