@@ -2,6 +2,17 @@
 // @codekit-prepend "tinySlider.js";
 
 $( document ).ready(function() {
-   console.log( "change" );
+
+   $("#show-form-btn").on("click", function(){
+      //console.log("button clicked");
+
+      // hide contact-button-section
+      $("#contact-button-section").hide();
+
+      // show form container
+      $("#form-container").show();
+
+   });
+
 });
 

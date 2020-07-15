@@ -525,6 +525,10 @@ button {
 /* =============
     Forms
 ============= */
+*:focus {
+  outline: none !important;
+}
+
 [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
   box-shadow: none;
 }
@@ -1404,4 +1408,182 @@ footer > div ul li a:visited {
   #contact-map #map {
     height: 700px;
   }
+}
+
+#contact-form {
+  background-color: #EFF6E0;
+}
+@media (min-width: 768px) {
+  #contact-form {
+    display: grid;
+    grid-template-columns: auto 60% auto;
+    grid-template-areas: ". form .";
+  }
+}
+@media (min-width: 768px) {
+  #contact-form > div {
+    grid-area: form;
+  }
+}
+#contact-form > div #contact-button-section {
+  display: grid;
+  place-items: center;
+  height: 200px;
+}
+@media (min-width: 768px) {
+  #contact-form > div #contact-button-section {
+    height: 300px;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-form > div #contact-button-section {
+    height: 400px;
+  }
+}
+#contact-form > div #contact-button-section #button-container {
+  position: relative;
+  transition: 0.5s;
+}
+#contact-form > div #contact-button-section #button-container:hover #contact-options {
+  opacity: 1;
+  pointer-events: auto;
+}
+#contact-form > div #contact-button-section #button-container #contact-us-btn {
+  border: none;
+  transition: 0.25s;
+}
+#contact-form > div #contact-button-section #button-container #contact-options {
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  background-color: #fff;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #contact-form > div #contact-button-section #button-container #contact-options {
+    top: -25%;
+    left: 90%;
+  }
+}
+#contact-form > div #contact-button-section #button-container #contact-options a:link,
+#contact-form > div #contact-button-section #button-container #contact-options a:visited {
+  background-color: #fff;
+  color: #F25C54;
+  font-size: 1rem;
+  width: 90%;
+  transition: 0.25s;
+  padding: 10% 5%;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  #contact-form > div #contact-button-section #button-container #contact-options a:link,
+#contact-form > div #contact-button-section #button-container #contact-options a:visited {
+    font-size: 1.25rem;
+    padding: 5%;
+  }
+}
+#contact-form > div #contact-button-section #button-container #contact-options a:link i,
+#contact-form > div #contact-button-section #button-container #contact-options a:visited i {
+  margin-right: 10px;
+}
+#contact-form > div #contact-button-section #button-container #contact-options a:link:hover, #contact-form > div #contact-button-section #button-container #contact-options a:link:active,
+#contact-form > div #contact-button-section #button-container #contact-options a:visited:hover,
+#contact-form > div #contact-button-section #button-container #contact-options a:visited:active {
+  color: #fff;
+  background-color: #F25C54;
+}
+#contact-form > div #contact-button-section #button-container #contact-options button {
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  color: #F25C54;
+  transition: 0.25s;
+  padding: 10% 5%;
+  text-align: left;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  #contact-form > div #contact-button-section #button-container #contact-options button {
+    font-size: 1.25rem;
+    padding: 5%;
+  }
+}
+#contact-form > div #contact-button-section #button-container #contact-options button i {
+  margin-right: 10px;
+}
+#contact-form > div #contact-button-section #button-container #contact-options button:hover {
+  color: #fff;
+  background-color: #F25C54;
+}
+#contact-form > div #form-container {
+  display: none;
+}
+#contact-form > div #form-container form {
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  #contact-form > div #form-container form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name email" "local phone" "message message" ". send";
+  }
+}
+#contact-form > div #form-container form section {
+  background-color: #fff;
+  width: 96%;
+  padding: 0 2%;
+  border-bottom: 1px solid #01161E;
+}
+#contact-form > div #form-container form section input {
+  border: none;
+  width: 100%;
+  padding: 4% 0;
+}
+#contact-form > div #form-container form section textarea {
+  border: none;
+  height: 300px;
+  width: 100%;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  #contact-form > div #form-container form section:nth-child(1) {
+    grid-area: name;
+  }
+}
+@media (min-width: 768px) {
+  #contact-form > div #form-container form section:nth-child(2) {
+    grid-area: email;
+  }
+}
+@media (min-width: 768px) {
+  #contact-form > div #form-container form section:nth-child(3) {
+    grid-area: local;
+  }
+}
+@media (min-width: 768px) {
+  #contact-form > div #form-container form section:nth-child(4) {
+    grid-area: phone;
+  }
+}
+@media (min-width: 768px) {
+  #contact-form > div #form-container form section:nth-child(5) {
+    grid-area: message;
+  }
+}
+#contact-form > div #form-container form section:nth-child(6) {
+  background-color: transparent;
+  text-align: right;
+  border-bottom: none;
+}
+@media (min-width: 768px) {
+  #contact-form > div #form-container form section:nth-child(6) {
+    grid-area: send;
+  }
+}
+#contact-form > div #form-container form section:nth-child(6) button {
+  border: none;
 }
