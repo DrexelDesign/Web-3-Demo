@@ -1,27 +1,128 @@
 /* =============
     Navigation
 ============= */
+.hide-nav-buttons {
+    display: none;
+}
 
-.red-button{
-    background-color: $red;
-    color: $white;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: rem-calc(18);
-    padding: 13px 20px;
-    display: inline-block;
+.show-nav-buttons {
+    display: block !important;
+}
 
-    @include md{
-        font-size: rem-calc(20);
-        padding: 14px 35px;
-    }
 
-    @include md{
-        font-size: rem-calc(24);
-        padding: 16px 40px;
-    }
 
-    &:hover{
-        background-color: $dark-red;
+#main-nav{
+    background-color: $dark-blue;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 90;
+
+
+    ul {
+        li {
+            button {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $sea-foam;
+                color: $red;
+                font-size: rem-calc(25);
+                padding: 20px 0 20px 10px;
+                text-align: left;
+                transition: 0.25s;
+                width: 100%;
+
+                @include md {
+                    font-size: rem-calc(40);
+                }
+
+                @include lg {
+                    font-size: rem-calc(50);
+                }
+
+                @include xl {
+                    font-size: rem-calc(60);
+                }
+
+                i {
+                    color: $white;
+                    font-size: rem-calc(15);
+                    margin-right: 10px;
+
+                    @include md {
+                        font-size: rem-calc(20);
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(30);
+                    }
+
+                    @include xl {
+                        font-size: rem-calc(40);
+                    }
+                }
+
+                &:hover {
+                    background-color: $white;
+
+                    i {
+                        color: $red;
+                    }
+                }
+            }
+
+            a:link,
+                a:visited {
+                    border-bottom: 1px solid $sea-foam;
+                    color: $red;
+                    display: inline-block;
+                    font-size: rem-calc(25);
+                    padding: 20px 0 20px 10px;
+                    width: 100%;
+
+                    @include md{
+                        font-size: rem-calc(40);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(50);
+                    }
+
+                    @include xl{
+                        font-size: rem-calc(60);
+                    }
+
+                    i {
+                        color: $white;
+                        font-size: rem-calc(15);
+                        margin-right: 10px;
+                        @include md{
+                            font-size: rem-calc(20);
+                        }
+    
+                        @include lg{
+                            font-size: rem-calc(30);
+                        }
+    
+                        @include xl{
+                            font-size: rem-calc(40);
+                        }
+                    }
+
+                    &:hover, &:active {
+                        background-color: $white;
+
+                        i {
+                            color: $red;
+                        }
+                    }
+                }
+        }
     }
 }

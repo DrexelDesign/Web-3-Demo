@@ -24,7 +24,7 @@
     <header class="grid-container">
         <div>
             <section id="logo-container">
-                <img src="img/header/logo.svg" alt="mountain logo">
+                <a href="index.html"><img src="img/header/logo.svg" alt="mountain logo"></a>
             </section>
     
             <section id="burger-container">
@@ -32,86 +32,104 @@
             </section>
         </div>
     </header>
+
+    <nav id="main-nav">
+            <ul>
+        
+                <li class=" hide-nav-buttons"><button><i class="fas fa-map-marked-alt"></i>Hike Planning</button></li>
+                <li class=" hide-nav-buttons"><button><i class="fas fa-sun-cloud"></i>Weather</button></li>
+        
+                <li class="show-nav-buttons hide-nav-buttons"><a href="index.html#index-planning"><i class="fas fa-map-marked-alt"></i>Hike Planning</a></li>
+                <li class="show-nav-buttons hide-nav-buttons"><a href="index.htmlindex-weather"><i class="fas fa-sun-cloud"></i>Weather</a></li>
+        
+                <li><a href="following.html"><i class="fas fa-share-alt-square"></i>Follow Us</a></li>
+                <li><a href="planning.html"><i class="fas fa-suitcase-rolling"></i>Trip Planning</a></li>
+                <li><a href="views.html"><i class="fas fa-mountains"></i>Mountain Views</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact Us</a></li>
+            </ul>
+        </nav>
+        
+
     <section class="grid-container content-spacing page-intro" id="contact-intro">
-            <div>
-                <h1>Contact</h1>
-            </div>
-        </section>
-        
-        <section class="grid-container content-spacing" id="contact-map">
-            <div>
-                <div id="map"></div>
-            </div>
-        </section>
-        
-        <section class="grid-container content-spacing" id="contact-form">
-            <div>
-        
-                <section id="contact-button-section">
-                    <section id="button-container">
-                        <button class="red-button" id="contact-us-btn">Contact Us <i class="far fa-ellipsis-v"></i></button>
-        
-                        <section id="contact-options">
-                            <ul>
-                                <li><a href="mailto:jgg32@drexel.edu"><i class="far fa-envelope"></i>email</a></li>
-                                <li><button id="show-form-btn"><i class="fas fa-align-left"></i>Contact Form</button></li>
-                            </ul>
-                        </section>
+        <div>
+            <h1>Contact</h1>
+        </div>
+    </section>
+    
+    <section class="grid-container content-spacing" id="contact-map">
+        <div>
+            <div id="map"></div>
+        </div>
+    </section>
+    
+    <section class="grid-container content-spacing" id="contact-form">
+        <div>
+    
+            <section id="contact-button-section">
+                <section id="button-container">
+                    <button class="red-button" id="contact-us-btn">Contact Us <i class="far fa-ellipsis-v"></i></button>
+    
+                    <section id="contact-options">
+                        <ul>
+                            <li><a href="mailto:jgg32@drexel.edu"><i class="far fa-envelope"></i>email</a></li>
+                            <li><button id="show-form-btn"><i class="fas fa-align-left"></i>Contact Form</button></li>
+                        </ul>
                     </section>
                 </section>
-        
-                <section id="form-container">
-                    <form action="https://formspree.io/xayplden" method="POST">
-                        <section>
-                            <input type="text" placeholder="Name" name="Name">
-                        </section>
-        
-                        <section>
-                            <input type="email" placeholder="Email" name="Email">
-                        </section>
-        
-                        <section>
-                            <input type="text" placeholder="Location" name="Location">
-                        </section>
-        
-                        <section>
-                            <input type="tel" placeholder="Phone" name="Phone">
-                        </section>
-        
-                        <section>
-                           <textarea  placeholder="Message" name="Message"></textarea>
-                        </section>
-        
-                        <section>
-                            <button class="red-button" type="submit">Send</button>
-                        </section>
-                    </form>
-                </section>
-        
-            </div>
-        </section>
-        
+            </section>
+    
+            <section id="form-container">
+                <form action="https://formspree.io/xayplden" method="POST">
+                    <section>
+                        <input type="text" placeholder="Name" name="Name">
+                    </section>
+    
+                    <section>
+                        <input type="email" placeholder="Email" name="Email">
+                    </section>
+    
+                    <section>
+                        <input type="text" placeholder="Location" name="Location">
+                    </section>
+    
+                    <section>
+                        <input type="tel" placeholder="Phone" name="Phone">
+                    </section>
+    
+                    <section>
+                       <textarea  placeholder="Message" name="Message"></textarea>
+                    </section>
+    
+                    <section>
+                        <button class="red-button" type="submit">Send</button>
+                    </section>
+                </form>
+            </section>
+    
+        </div>
+    </section>
+    
     <footer class="grid-container">
-                <div>
-                    <h1>Sign Up!</h1>
-                    <form action="#">
-                        <section>
-                            <div>
-                                <input type="text" placeholder="Email">
-                            </div>
-                            <div>
-                                <button><i class="fas fa-paper-plane"></i></button>
-                            </div>
-                        </section>
-                    </form>
-                    <ul>
-                        <li><a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/home?trk=logo"><i class="fab fa-linkedin-in"></i></i></a></li>
-                        <li><a href="https://github.com/ target="_blank"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </footer>
+            <div>
+                <h1>Sign Up!</h1>
+                <form action="#">
+                    <section>
+                        <div>
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div>
+                            <button><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </section>
+                </form>
+                <ul>
+                    <li><a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/home?trk=logo"><i class="fab fa-linkedin-in"></i></i></a></li>
+                    <li><a href="https://github.com/ target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
 
     <script>
         function initMap() {

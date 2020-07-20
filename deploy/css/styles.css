@@ -522,6 +522,31 @@ button {
   transition: 0.25s;
 }
 
+.red-button {
+  background-color: #F25C54;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 13px 20px;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .red-button {
+    font-size: 1.25rem;
+    padding: 14px 35px;
+  }
+}
+@media (min-width: 768px) {
+  .red-button {
+    font-size: 1.5rem;
+    padding: 16px 40px;
+  }
+}
+.red-button:hover {
+  background-color: #AD403A;
+}
+
 /* =============
     Forms
 ============= */
@@ -547,29 +572,139 @@ textarea {
 /* =============
     Navigation
 ============= */
-.red-button {
-  background-color: #F25C54;
+.hide-nav-buttons {
+  display: none;
+}
+
+.show-nav-buttons {
+  display: block !important;
+}
+
+#main-nav {
+  background-color: #01161E;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 90;
+}
+#main-nav ul li button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #EFF6E0;
+  color: #F25C54;
+  font-size: 1.5625rem;
+  padding: 20px 0 20px 10px;
+  text-align: left;
+  transition: 0.25s;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #main-nav ul li button {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1025px) {
+  #main-nav ul li button {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 1440px) {
+  #main-nav ul li button {
+    font-size: 3.75rem;
+  }
+}
+#main-nav ul li button i {
   color: #fff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 1.125rem;
-  padding: 13px 20px;
-  display: inline-block;
+  font-size: 0.9375rem;
+  margin-right: 10px;
 }
 @media (min-width: 768px) {
-  .red-button {
+  #main-nav ul li button i {
     font-size: 1.25rem;
-    padding: 14px 35px;
   }
+}
+@media (min-width: 1025px) {
+  #main-nav ul li button i {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1440px) {
+  #main-nav ul li button i {
+    font-size: 2.5rem;
+  }
+}
+#main-nav ul li button:hover {
+  background-color: #fff;
+}
+#main-nav ul li button:hover i {
+  color: #F25C54;
+}
+#main-nav ul li a:link,
+#main-nav ul li a:visited {
+  border-bottom: 1px solid #EFF6E0;
+  color: #F25C54;
+  display: inline-block;
+  font-size: 1.5625rem;
+  padding: 20px 0 20px 10px;
+  width: 100%;
 }
 @media (min-width: 768px) {
-  .red-button {
-    font-size: 1.5rem;
-    padding: 16px 40px;
+  #main-nav ul li a:link,
+#main-nav ul li a:visited {
+    font-size: 2.5rem;
   }
 }
-.red-button:hover {
-  background-color: #AD403A;
+@media (min-width: 1025px) {
+  #main-nav ul li a:link,
+#main-nav ul li a:visited {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 1440px) {
+  #main-nav ul li a:link,
+#main-nav ul li a:visited {
+    font-size: 3.75rem;
+  }
+}
+#main-nav ul li a:link i,
+#main-nav ul li a:visited i {
+  color: #fff;
+  font-size: 0.9375rem;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  #main-nav ul li a:link i,
+#main-nav ul li a:visited i {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1025px) {
+  #main-nav ul li a:link i,
+#main-nav ul li a:visited i {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1440px) {
+  #main-nav ul li a:link i,
+#main-nav ul li a:visited i {
+    font-size: 2.5rem;
+  }
+}
+#main-nav ul li a:link:hover, #main-nav ul li a:link:active,
+#main-nav ul li a:visited:hover,
+#main-nav ul li a:visited:active {
+  background-color: #fff;
+}
+#main-nav ul li a:link:hover i, #main-nav ul li a:link:active i,
+#main-nav ul li a:visited:hover i,
+#main-nav ul li a:visited:active i {
+  color: #F25C54;
 }
 
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {
@@ -916,6 +1051,12 @@ pre[class*=language-] {
 ============= */
 header {
   border-bottom: 1px #EFF6E0 solid;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 100;
 }
 header div {
   display: grid;
