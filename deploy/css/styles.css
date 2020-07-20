@@ -582,7 +582,7 @@ textarea {
 
 #main-nav {
   background-color: #01161E;
-  display: grid;
+  display: none;
   place-items: center;
   position: fixed;
   top: 0;
