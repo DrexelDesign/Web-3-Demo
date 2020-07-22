@@ -428,6 +428,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/main-nav/burger-animation.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/main-nav/burger-animation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/main-nav/burger-click.js": {
 		"bF": 0,
 		"ft": 64,
@@ -724,6 +735,14 @@
 		"oF": 2,
 		"oS": 0,
 		"sct": 0
+		},
+	"/dev/template.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/template.html",
+		"oF": 0
 		},
 	"/dev/template.kit": {
 		"cB": 0,
@@ -2290,7 +2309,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "tns",
+	"jsCheckerReservedNamesString": "tns, gsap",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

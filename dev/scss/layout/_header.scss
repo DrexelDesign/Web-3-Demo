@@ -28,10 +28,24 @@ header {
 
         #burger-container {
             align-items: center;
-            color: $red;
             display: flex;
-            font-size: rem-calc(20);
             justify-content: flex-end;
+
+            #burger{
+                cursor: pointer;
+                transition: 0.25s;
+
+                #lines{
+                    transition: 0.25s;
+                    stroke: $red !important;
+                }
+
+                &:hover{
+                    #lines{
+                        stroke: $dark-red !important;
+                    }
+                }
+            }
         }
     }
 }

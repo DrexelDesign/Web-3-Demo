@@ -1075,10 +1075,19 @@ header div #logo-container img {
 }
 header div #burger-container {
   align-items: center;
-  color: #F25C54;
   display: flex;
-  font-size: 1.25rem;
   justify-content: flex-end;
+}
+header div #burger-container #burger {
+  cursor: pointer;
+  transition: 0.25s;
+}
+header div #burger-container #burger #lines {
+  transition: 0.25s;
+  stroke: #F25C54 !important;
+}
+header div #burger-container #burger:hover #lines {
+  stroke: #AD403A !important;
 }
 
 /* =============
