@@ -1,11 +1,16 @@
 
 var canYouSeeTheMenu = false;
 
+var navHeight = $("#main-nav").outerHeight();
+//move the main nav off screen ( this is moving the main-nav on the Y axis )
+gsap.set("#main-nav",{y: -navHeight})
 
+var mainNavTimeline = gsap.timeline({paused:true})
+mainNavTimeline.to("#main-nav",{duration:0.25, y:0})
 
-
-
-
+//$("#main-nav").height();
+//console.log($("#main-nav").height() + " is the height of the #main-nav");
+//console.log($("#main-nav").outerHeight() + " is the outer height of the #main-nav");
 
 // function to handle the showing and hiding of the main-nav
 function hideShowMainNav(){
@@ -21,16 +26,17 @@ function hideShowMainNav(){
         //turn the burger into an X
         animateBurger();
 
-
+        //play the main nav animation into view ( pull it down )
+        mainNavTimeline.play();
 
     }else{
         console.log("hide the menu!");
         // reset back to false, so the you can bring the menu back!
         canYouSeeTheMenu = false;
-        
+
         //turn the X into the burger
         animateBurger();
+        // play the main nav animation out of view ( push it up )
+        mainNavTimeline.reverse();
     }
-
-
 }

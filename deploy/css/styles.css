@@ -582,7 +582,7 @@ textarea {
 
 #main-nav {
   background-color: #01161E;
-  display: none;
+  display: grid;
   place-items: center;
   position: fixed;
   top: 0;
@@ -592,6 +592,7 @@ textarea {
   height: 100vh;
   width: 100%;
   z-index: 90;
+  padding: 100px 0;
 }
 #main-nav ul li button {
   background-color: transparent;
