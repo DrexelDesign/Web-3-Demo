@@ -10,13 +10,15 @@ mainNavTimeline.to("#main-nav",{duration:0.25, y:0})
 
 //$("#main-nav").height();
 //console.log($("#main-nav").height() + " is the height of the #main-nav");
-//console.log($("#main-nav").outerHeight() + " is the outer height of the #main-nav");
+console.log($("#main-nav").outerHeight() + " is the outer height of the #main-nav");
 
 // function to handle the showing and hiding of the main-nav
 function hideShowMainNav(){
     //console.log("hide or show nav");
     //toggles the css display property
    // $("#main-nav").toggle();
+
+   //console.log("hide show");
 
     if(canYouSeeTheMenu === false){
         console.log("show me the menu!");
@@ -36,7 +38,17 @@ function hideShowMainNav(){
 
         //turn the X into the burger
         animateBurger();
+
         // play the main nav animation out of view ( push it up )
         mainNavTimeline.reverse();
+    }
+}
+
+
+var menuBackground = document.querySelector('#main-nav');
+
+window.onclick = function(event){
+    if(event.target == menuBackground){
+        hideShowMainNav();
     }
 }
