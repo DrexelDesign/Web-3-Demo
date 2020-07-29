@@ -15,8 +15,19 @@ gsap.set(".lines",{transformOrigin:"center"});
 burgerAnimationTimeLine.to("#top-line",{duration:burgerAnimateSpeed, rotation:45}, "burgerToX")
                         .to("#bottom-line",{duration:burgerAnimateSpeed, rotation:-45}, "burgerToX")
                         .to("#middle-line",{duration:burgerAnimateSpeed, alpha:0}, "burgerToX")
-                        .to("#right-arrow",{duration:burgerAnimateSpeed, alpha:0, rotation:0}, "burgerToX")
-                        .to("#left-arrow",{duration:burgerAnimateSpeed, alpha:0, rotation:0}, "burgerToX");
+                        .to("#down-right-arrow",{duration:burgerAnimateSpeed, alpha:0, rotation:0}, "burgerToX")
+                        .to("#down-left-arrow",{duration:burgerAnimateSpeed, alpha:0, rotation:0}, "burgerToX");
+
+
+var upArrowToBurger = gsap.timeline({paused:true});
+upArrowToBurger.to("#top-line",{y:0},"backToBurger")
+                .to("#bottom-line",{y:0},"backToBurger")
+                .to("#middle-line",{alpha:1},"backToBurger")
+                .to("#burger",{rotation:0},"backToBurger")
+                .to("#up-right-arrow",{alpha:0},"backToBurger")
+                .to("#up-left-arrow",{alpha:0},"backToBurger")
+                .to("#down-right-arrow",{alpha:1},"backToBurger")
+                .to("#down-left-arrow",{alpha:1},"backToBurger");
 
 
 function animateBurger(){
@@ -26,7 +37,7 @@ function animateBurger(){
         burgerAnimationTimeLine.play();
     }else{
         // turn the X into a burger
-        burgerAnimationTimeLine.reverse();
+        upArrowToBurger.play();
     }
 }
 
