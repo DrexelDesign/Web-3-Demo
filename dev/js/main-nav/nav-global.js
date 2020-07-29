@@ -25,15 +25,17 @@ function hideShowMainNav(){
         // reset back to true, so that the menu will go away
         canYouSeeTheMenu = true;
 
-            console.log(burgerToArrowTimeline.progress() + " is the progress for the gsap timeline, anything larger then 0 means it has played");
+            //console.log(burgerToArrowTimeline.progress() + " is the progress for the gsap timeline, anything larger then 0 means it has played");
 
-           alert(burgerToArrowTimeline.progress() + " is the progress for the gsap timeline, anything larger then 0 means it has played");
+           //alert(burgerToArrowTimeline.progress() + " is the progress for the gsap timeline, anything larger then 0 means it has played");
 
             if(burgerToArrowTimeline.progress() > 0){
                 //turn the burger into an X
+               // alert("dekstop animation");
                 animateBurger();
             }else{
-
+                //alert("mobile animation");
+                mobileburgerAnimation();
             }
         
 
@@ -45,8 +47,14 @@ function hideShowMainNav(){
         // reset back to false, so the you can bring the menu back!
         canYouSeeTheMenu = false;
 
-        //turn the X into the burger
-        animateBurger();
+        if(burgerToArrowTimeline.progress() > 0){
+            //turn the burger into an X
+           // alert("dekstop animation");
+            animateBurger();
+        }else{
+           // alert("mobile animation");
+            mobileburgerAnimation();
+        }
 
         // play the main nav animation out of view ( push it up )
         mainNavTimeline.reverse();
