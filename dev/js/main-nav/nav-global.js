@@ -65,7 +65,9 @@ function hideShowMainNav(){
 var menuBackground = document.querySelector('#main-nav');
 
 window.onclick = function(event){
+
     if(event.target == menuBackground){
+        
         hideShowMainNav();
     }
 }
