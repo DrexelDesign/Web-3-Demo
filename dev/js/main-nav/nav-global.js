@@ -21,9 +21,7 @@ gsap.set(".lines", {
     transformOrigin: "center"
 });
 
-var burgerAnimationTimeLine = gsap.timeline({
-    paused: true
-});
+
 
 // function to handle the showing and hiding of the main-nav
 function hideShowMainNav() {

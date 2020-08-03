@@ -1,4 +1,6 @@
-
+var burgerAnimationTimeLine = gsap.timeline({
+    paused: true
+});
 
 burgerAnimationTimeLine.addLabel("burgerToDownArrow")
                         .to("#burger",{duration:burgerAnimateSpeed, rotation:-90}, "animateBurger")
