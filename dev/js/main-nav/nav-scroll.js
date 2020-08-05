@@ -1,5 +1,5 @@
 
-gsap.registerPlugin(ScrollToPlugin);
+
 
 var scrollItems =["#index-planning", "#index-weather"];
 

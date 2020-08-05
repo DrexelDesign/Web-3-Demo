@@ -5,7 +5,7 @@
     Index Hikes
  --------------------------*/
 #index-hikes {
-    
+    margin-top: 80px;
 }
 
 /* --------------------------
@@ -88,6 +88,8 @@
  #index-planning {
     background-color: $blue;
     color: $green;
+
+    // overflow-x: hidden;
 
     >div{
         // border: 1px solid red;
