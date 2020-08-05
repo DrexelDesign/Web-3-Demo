@@ -1,3 +1,5 @@
+var burgerAnimateSpeed = 0.25;
+
 var burgerAnimationTimeLine = gsap.timeline({
     paused: true
 });
@@ -20,12 +22,12 @@ burgerAnimationTimeLine.addLabel("burgerToDownArrow")
                         .to("#up-right-arrow",{duration: burgerAnimateSpeed, alpha:0},"burgerToX")
                         .addLabel("downArrowToXReverse")
                         .addPause()
-                        .addLabel("XtoUpArrow")
+                        .addLabel("xToUpArrow")
                         .to("#bottom-line",{duration:burgerAnimateSpeed, rotation: 0}, 'upArrow')
                         .to("#top-line",{duration:burgerAnimateSpeed, rotation: 0}, 'upArrow')
                         .to("#up-left-arrow",{duration:burgerAnimateSpeed,rotation:55, alpha:1}, 'createUpArrow')
                         .to("#up-right-arrow",{duration:burgerAnimateSpeed,rotation:-55, alpha:1}, 'createUpArrow')
-                        .addLabel("XtoUpArrowReverse")
+                        .addLabel("xToUpArrowReverse")
                         .addPause()
                         .addLabel("upArrowToBurger")
                         .to("#up-left-arrow",{duration:burgerAnimateSpeed,rotation:0, alpha:0}, 'backToBurger')
