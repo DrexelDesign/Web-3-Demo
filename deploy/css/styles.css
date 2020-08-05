@@ -1097,6 +1097,7 @@ footer {
   background-image: url("../img/footer/footer.jpg");
   background-position: center;
   background-size: cover;
+  padding-bottom: 100px;
 }
 footer > div {
   text-align: center;
@@ -1233,6 +1234,8 @@ footer > div ul li a:visited {
  --------------------------*/
 #index-brands {
   padding: 20px 0;
+  position: relative;
+  background-color: #fff;
 }
 @media (min-width: 768px) {
   #index-brands {
@@ -1289,6 +1292,7 @@ footer > div ul li a:visited {
 #index-planning {
   background-color: #124559;
   color: #AEC3B0;
+  position: relative;
 }
 #index-planning > div {
   position: relative;
@@ -1303,6 +1307,7 @@ footer > div ul li a:visited {
   position: absolute;
   right: 10%;
   text-align: center;
+  z-index: 120;
 }
 @media (min-width: 1025px) {
   #index-planning > div #card {
@@ -1392,6 +1397,10 @@ footer > div ul li a:visited {
 /* --------------------------
    Index Weather
 --------------------------*/
+#index-weather {
+  position: relative;
+  background-color: #fff;
+}
 @media (min-width: 1440px) {
   #index-weather {
     grid-template-columns: auto 1000px auto;

@@ -104,7 +104,7 @@
     </section>
     
     <section id="index-hero">
-        <img src="img/home/hero.jpg" alt="picture of forset">
+        <img src="img/home/hero.jpg" alt="picture of forest">
     </section>  
     
     <section class="grid-container" id="index-brands">
@@ -160,8 +160,49 @@
     
             <aside>
                 <ul>
-                    <li><img src="img/home/weather/thunder.svg" alt="thunder icon"></li>
-                    <li><img src="img/home/weather/sun.svg" alt="sun icon"></li>
+                    <!-- <li><img src="img/home/weather/thunder.svg" alt="thunder icon"></li> -->
+    
+    
+                    <li>
+                        <svg width="109" height="115" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 115">
+                            <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                                <g transform="translate(-473 -149)" id="weather">
+                                  <g id="thunder" transform="translate(475 151)">
+                                    <path id="rain-1" stroke="#1B86D0" stroke-width="7" d="M17.637 78L11 92"/>
+                                    <path id="rain-2" stroke="#1B86D0" stroke-width="7" d="M31.637 78L25 92"/>
+                                    <path id="rain-3" stroke="#1B86D0" stroke-width="7" d="M74.637 78L68 92"/>
+                                    <path id="rain-4" stroke="#1B86D0" stroke-width="7" d="M88.637 78L82 92"/>
+                                    <path id="lightening" stroke="#F5A714" stroke-width="6" d="M58.197 53.5l-15.84 23.402h18L39.5 110"/>
+                                    <path d="M74.5 67.5h11.305c10.315 0 18.695-8.107 18.695-18.07 0-9.205-7.16-16.82-16.376-17.93m-1.061-.486a25.76 25.76 0 00.437-4.706C87.5 12.07 75.768.5 61.338.5 52.465.5 44.307 4.89 39.48 12.113a18.04 18.04 0 00-7.141-1.476c-9.992 0-18.133 8.028-18.133 17.906 0 .187.006.388.006.583C6.146 31.746.5 39.268.5 47.826.5 58.675 9.454 67.5 20.446 67.5h9.832" id="cloud" stroke="#124559" stroke-width="5"/>
+                                  </g>
+                                </g>
+                              </g>
+                        </svg>
+                    </li>
+    
+    
+    
+                    <li>
+                    <svg width="93" height="95" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 95">
+                    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-762 -130)" id="weather" stroke="#F5A714">
+                        <g id="sun" transform="translate(765.253 133.253)">
+                            <path id="ray-1" stroke-width="6" stroke-linecap="round" d="M43.247 75.511v11.748"/>
+                            <path id="ray-2" stroke-width="6" stroke-linecap="round" d="M65.747 65.747l8.162 8.452"/>
+                            <path id="ray-3" stroke-width="6" stroke-linecap="round" d="M73.747 43.747l11.733-.615"/>
+                            <path id="ray-4" stroke-width="6" stroke-linecap="round" d="M64.906 21.381l8.593-8.012"/>
+                            <path id="ray-5" stroke-width="6" stroke-linecap="round" d="M42.747 11.747L42.542 0"/>
+                            <path id="ray-6" stroke-width="6" stroke-linecap="round" d="M20.747 21.747l-8.308-8.308"/>
+                            <path id="ray-7" stroke-width="6" stroke-linecap="round" d="M11.747 43.747L0 43.542"/>
+                            <path id="ray-8" stroke-width="6" stroke-linecap="round" d="M20.747 66.747l-8.731 7.862"/>
+                            <circle stroke-width="5" cx="42.747" cy="42.747" r="20.5" id="sun-body"/>
+                        </g>
+                        </g>
+                    </g>
+                    </svg>
+                    </li>
+    
+    
                     <li><img src="img/home/weather/wind.svg" alt="wind icon"></li>
                     <li><img src="img/home/weather/snow.svg" alt="snow icon"></li>
                 </ul>
@@ -173,24 +214,26 @@
                  <h1>Sign Up!</h1>
                  <form action="#">
                      <section>
-                         <div>
+                         <div id="footer-input">
                              <input type="text" placeholder="Email">
                          </div>
-                         <div>
+                         <div id="footer-btn">
                              <button><i class="fas fa-paper-plane"></i></button>
                          </div>
                      </section>
                  </form>
                  <ul>
-                     <li><a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></li>
-                     <li><a href="https://www.linkedin.com/home?trk=logo"><i class="fab fa-linkedin-in"></i></i></a></li>
-                     <li><a href="https://github.com/ target="_blank"><i class="fab fa-github"></i></a></li>
-                     <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                     <li class="social-icons"><a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></li>
+                     <li class="social-icons"><a href="https://www.linkedin.com/home?trk=logo"><i class="fab fa-linkedin-in"></i></i></a></li>
+                     <li class="social-icons"><a href="https://github.com/ target="_blank"><i class="fab fa-github"></i></a></li>
+                     <li class="social-icons"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
                  </ul>
              </div>
          </footer>
     <!-- jQuery -->
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+             <!-- Greensock DrawSVG -->
+             <script src="js/gsap/DrawSVGPlugin.min.js"></script>
              <!-- Greensock ScrollTrigger Plugin -->
              <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
              <!-- Greensock Scroll To Plugin -->
