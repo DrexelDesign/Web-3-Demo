@@ -11,11 +11,6 @@ gsap.to("#index-hero",{scrollTrigger:{
     id:"hero"
 }})
 
-
-
-
-
-
 /* ========================
     Header Animation v1
 ======================== */
